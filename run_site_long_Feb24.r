@@ -73,9 +73,8 @@ run_site<-function(square_number,run_number,total_M,human_population,vaccine_cov
   
   params<-get_parameters(square_number=square_number,run_number=run_number,
                          supp_gam=supp_gam,supp_arab=supp_arab,supp_fun=supp_fun,
-                         total_M=total_M,
-                         human_population=human_population,
-                         list(prevalence_rendering_min_ages = 2*365,
+                         list(total_M=total_M,
+                              human_population=human_population,prevalence_rendering_min_ages = 2*365,
                               prevalence_rendering_max_ages = 10 * 365,
                               incidence_rendering_min_ages = 0,
                               incidence_rendering_max_ages = 100 * 365,
